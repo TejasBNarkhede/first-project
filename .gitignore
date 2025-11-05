@@ -1,38 +1,71 @@
-// System / Log files 
-*.DS_Store
+# Python specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
 *.log
 
-// Archives
-*.zip
+# Django specific ignores
+*.sqlite3
+db.sqlite3
+/media
+/staticfiles
+*.pot
+*.mo
 
-// Sass Cache
-.sass-cache
+# Environment variables and secrets
+.env
+*.env
+secrets.json
 
-// Project files
-.idea
-nbproject
-nbproject/private
+# Ignore migrations
+*/migrations/*.py[cod]
+*/migrations/__pycache__/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Logs and debug info
+*.log
+*.out
+*.err
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# System specific
+.DS_Store
+Thumbs.db
+
+# IDE ignores
 .vscode/
-.vs/
+.idea/
+*.sublime-project
+*.sublime-workspace
 
-// Node / Bower
-node_modules/
-bower_components/
+# Docker
+*.swp
+.dockerignore
+docker-compose.override.yml
+docker-compose.override.yml
+docker-compose.prod.yml
+.dockerignore
 
-// Plugins
-/plugins/*/*.md
-/plugins/*/*.html
-/plugins/*/package.json
-
-
-// Docs
-Gemfile.lock
-docs/_site
-docs_html/
-.jekyll-cache/
-.jekyll-metadata
-
-// ETC
-TODO
-test.html
-ad.js
+# macOS specific ignores
+.DS_Store
+.AppleDouble
+.LSOverride
